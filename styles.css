@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  box-sizing: border-box!important;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto';
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  background-image: url("https://wallpaperaccess.com/full/4334829.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.99));
+
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+
+button{
+    height:65px;
+    width:200px;
+    background:#5663FF;
+    border-radius:10px;
+    margin: 14px 0px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+hr{
+  width: 40%;
+  margin-top:15px ;
+  margin-bottom:15px ;
+  background: #fff;
+  /* opacity: 0.5;  */
+}
+
+.hr1{
+  margin-left: 0px;
+}
+
+.hr2{
+  margin-right: 0px;
+}
+
+a:link{
+  text-decoration: none;
+  margin-left: 4px;
+  color: #5663FF!important;
+}
+a{
+  color: #5663FF;
+}
+
+@media only screen and (min-width: 599px){
+
+.center_container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+ /* Header e imagem */
+.box_image{
+    width: 100%;
+    height: 800px;
+}
+
+.content_principal{
+  width: 50%;
+  height: 100%;
+}
+
+.font_pricipal{
+  font-size: 48px;
+  color: #fff;
+}
+.images_screenshots{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: right;
+  margin-top: -10px;
+
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: -100px; */
+}
+.shot1, .shot2{
+  width: 350px;
+  height: auto;
+  z-index: 1;
+}
+.shot1{
+  width: 380px;
+  z-index: 2;
+  position:absolute;
+  right: 200px;
+}
+
+.ptext{
+  font-size: 12px;
+  color: #fff;
+}
+
+.header_responsive{
+   display: none;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    padding-top: 60px;
+
+    display: flex;
+    align-items: center;
+   justify-content: center; 
+}
+.header img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  
+}
+
+.title_site{
+    color: #fff;
+    font-size: 36px;
+}
+
+.header span {
+    color: #fff;
+    font-weight: bold;
+} 
+
+/* Secao dos itens */
+.itens{
+    width: 100%;
+    height: 430px;
+    padding: 50px;
+    color: #fff;
+    
+}
+
+.itens h2{
+    margin: 10px 0px;
+}
+
+.flex_align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img_item{
+    height: 300px;
+    width: 300px;
+  
+    text-align: justify; 
+}
+
+.img_game{
+    width: 300px;
+    height: 200px;
+    border: 5px solid #5663FF;
+    object-fit: cover;
+}
+
+
+
+/* SEÇÃO SOBRE */
+
+.about{
+    width: 100%;
+    height: 430px;
+    padding: 50px;
+    color: #fff;
+}
+
+.img_circle{
+    width:40%;
+    height:100%;
+}
+
+.img_circle img{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 10px solid #5663FF; 
+    float: right;
+    
+}
+
+.description{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.article{
+    margin-left: 5%;
+    width: 55%;
+    height: 100%;
+}
+
+.text p {
+    margin: 20px 0px;
+}
+
+/* footer */
+
+.footer{
+    height: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px){
+  .center_container{
+      width: 90%;
+      height: auto;
+      margin: auto;
+  }
+  /* Header e imagem */
+  .header{
+    width: 100%;
+    height: 70px;
+    padding-top: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  .header img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+
+  }
+
+  .header span {
+    color: #fff;
+    font-weight: bold;
+  }  
+
+  .box_image{
+      width: 100%;
+      height: auto;
+  }
+
+  .content_principal{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .font_pricipal{
+    font-size: 38px;
+    color: #fff;
+  }
+  .ptext{
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .images_screenshots{
+    display: none;
+  }
+
+  /* Secao dos itens */
+  .itens{
+      width: 100%;
+      height: auto;
+      padding: 50px;
+      color: #fff;
+      
+  }
+
+  .itens h2{
+      margin: 10px 0px;
+  }
+
+  .flex_align{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+  }
+
+  .img_item{
+      min-height: 300px;
+      height: auto; 
+  }
+
+  .img_game{
+      width: 80vw;
+      height: 200px;
+      border: 5px solid #5663FF;
+      object-fit: cover;
+  }
+
+
+
+  /* SEÇÃO SOBRE */
+
+  .about{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #fff;
+
+    flex-direction: column;
+  }
+
+  .img_circle{
+    width:90vw;
+    height:90vw;
+  }
+
+  .img_circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px solid #5663FF;
+  }
+
+  .article{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+
+  .text p {
+    margin: 20px 0px;
+  }
+
+  /* footer */
+
+  .footer{
+    border-top: 1px solid #fff;
+    height: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
