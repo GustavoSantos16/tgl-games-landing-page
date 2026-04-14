@@ -393,7 +393,6 @@ button:active {
 
 .shot1, .shot2 {
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card), 0 0 60px rgba(238, 66, 102, 0.15);
   transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
 }
 
